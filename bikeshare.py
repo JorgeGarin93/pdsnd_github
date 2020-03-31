@@ -62,8 +62,7 @@ def load_data(city, month, day):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.dayofweek
 
-
-    
+   
     # filter by month if applicable
     if month.lower() != 'all':
         # use the index of the months list to get the corresponding int
@@ -88,7 +87,17 @@ def load_data(city, month, day):
     
     return df
 
-
+# By now, we have accomplished our first goal, load the data using the filters given by the user
+# 
+# Our next step is to calculate the KPI's based on the dataframe DF 
+# This KPI's can be divided by topic
+#	- Time Stats
+#	- Station stats
+#	- Trip Duration Stats
+#	- User Stats
+# 
+# Remember, after calculating those indicators, we need to ask the user again if he wants to start
+#again with the entire excercise. So we need to build a function to do this.
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
