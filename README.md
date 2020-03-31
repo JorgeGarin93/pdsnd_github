@@ -10,3 +10,9 @@ This project will be called George Nanodegree
 #Describe what your project is about and what it does
 The objective of this is to give you some KPI's of the usabilyty of Bikeshare in 3 different cities
 
+### Files used
+#Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+bikeshare.py
