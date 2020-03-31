@@ -1,23 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In this comments i will be trying to explain the main structure of this code made in python.
 
+# First of all, we'll be needing to store the choices of the user about the city he'll be wanting
+#to study, and if he/she want to filter by any day of the week or month.
+
+# After this, we need to load the data that the user wants to study so later on we can
+#calculate the KPI's
 
 import pandas as pd
 import numpy as np
 import time
 
 
-# In[3]:
-
-
 CITY_DATA = { 'chicago': 'chicago.csv',
                'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-
-
-# In[4]:
 
 
 day_of_week = {0:  'Monday',
@@ -38,9 +37,6 @@ month_of_year = {
                     }
 
 
-# In[5]:
-
-
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     print("Please select the city you want to know about (Chicago, New York City or Washington)")
@@ -55,8 +51,6 @@ def get_filters():
     return city, month, day
 
 
-# In[6]:
-
 
 def load_data(city, month, day):
     # load data file into a dataframe
@@ -67,6 +61,7 @@ def load_data(city, month, day):
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.dayofweek
+
 
     
     # filter by month if applicable
@@ -94,8 +89,6 @@ def load_data(city, month, day):
     return df
 
 
-# In[7]:
-
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -111,8 +104,6 @@ def time_stats(df):
     print('-'*40)
     return df
 
-
-# In[8]:
 
 
 def station_stats(df):
@@ -132,8 +123,6 @@ def station_stats(df):
     return df
 
 
-# In[9]:
-
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -151,8 +140,6 @@ def trip_duration_stats(df):
     print('-'*40)
     return df
 
-
-# In[18]:
 
 
 def user_stats(df):
@@ -184,8 +171,6 @@ def user_stats(df):
     return df
 
 
-# In[19]:
-
 
 def raw_data(df):
     print('Would you like to see individual trip data? (Yes/No)')
@@ -196,8 +181,6 @@ def raw_data(df):
     else:
         print('Ok then ...')
 
-
-# In[21]:
 
 
 #INPUT CONSULTA
@@ -227,10 +210,5 @@ def main():
         
 if __name__ == "__main__":
 	main()
-
-
-# In[ ]:
-
-
 
 
