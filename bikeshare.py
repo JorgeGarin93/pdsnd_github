@@ -180,6 +180,11 @@ def user_stats(df):
     return df
 
 
+<<<<<<< HEAD
+=======
+#WARNING: we have to remember, not all the csv files has the same columns so we have to addapt to that
+
+>>>>>>> refactoring
 
 def raw_data(df):
     print('Would you like to see individual trip data? (Yes/No)')
@@ -221,3 +226,5 @@ if __name__ == "__main__":
 	main()
 
 
+
+#As we finished coding here, always remember to check if every part for every user cases works fine
