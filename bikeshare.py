@@ -184,7 +184,7 @@ def user_stats(df):
     return df
 
 
-#we have to remember, not all the csv files has the same columns so we have to addapt to that
+#WARNING: we have to remember, not all the csv files has the same columns so we have to addapt to that
 
 
 def raw_data(df):
@@ -229,8 +229,7 @@ if __name__ == "__main__":
 	main()
 
 
-# In[ ]:
-
+#As we finished coding here, always remember to check if every part for every user cases works fine
 
 
 
