@@ -1,15 +1,12 @@
 ### Date created
-Include the date you created this project and README file.
+#Include the date you created this project and README file.
+This File was created the 31-03-2020
 
 ### Project Title
-Replace the Project Title
+#Replace the Project Title
+This project will be called George Nanodegree
 
 ### Description
-Describe what your project is about and what it does
-
-### Files used
-Include the files used
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+#Describe what your project is about and what it does
+The objective of this is to give you some KPI's of the usabilyty of Bikeshare in 3 different cities
 
