@@ -184,7 +184,7 @@ def user_stats(df):
     return df
 
 
-# In[19]:
+#we have to remember, not all the csv files has the same columns so we have to addapt to that
 
 
 def raw_data(df):
